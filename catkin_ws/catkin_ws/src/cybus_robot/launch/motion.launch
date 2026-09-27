@@ -1,0 +1,11 @@
+<launch>
+  <include file="$(find jetbot_pro)/launch/jetbot.launch"/>
+
+  <node name="cybus_motion" pkg="cybus_robot" type="cybus_motion_node.py"
+        output="screen" respawn="true">
+    <param name="linear_speed"    value="0.3"/>
+    <param name="angular_speed"   value="0.8"/>
+    <param name="dist_tolerance"  value="0.02"/>
+    <param name="angle_tolerance" value="1.0"/>
+  </node>
+</launch>

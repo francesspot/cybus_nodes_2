@@ -1,0 +1,6 @@
+<launch>
+  <node name="lidar_reader"   pkg="lidar_threshold" type="lidar_reader.py"
+        output="screen" required="true"/>
+  <node name="alert_handler"  pkg="lidar_threshold" type="alert_handler.py"
+        output="screen" required="true"/>
+</launch>

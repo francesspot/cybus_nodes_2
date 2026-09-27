@@ -1,0 +1,7 @@
+services:
+  ros_melodic:
+    image: ros:melodic-ros-base
+    container_name: cybus_ros
+    volumes:
+      - ./catkin_ws:/root/catkin_ws
+    tty: true

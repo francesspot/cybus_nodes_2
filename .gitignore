@@ -1,0 +1,17 @@
+# Foldery środowiska ROS (Catkin)
+build/
+devel/
+install/
+.catkin_workspace
+
+# Pliki tymczasowe Pythona
+__pycache__/
+*.py[cod]
+*$py.class
+*.swp
+
+# Pliki systemowe i IDE
+.vscode/
+.idea/
+.DS_Store
+*.log
