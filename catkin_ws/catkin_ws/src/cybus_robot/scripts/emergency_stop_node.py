@@ -20,11 +20,11 @@ def command_callback(msg):
     except ValueError:
         command = raw_data.lower()
     
-    if command in ["robot stop", "stop", "zatrzymaj_sie", "zatrzymaj sie"]:
+    if command in ["robot stop", "stop", "zatrzymaj_sie", "zatrzymaj sie", "cybuś stop", "cybuś się"]:
         rospy.logwarn("OTRZYMANO SYGNAL AWARYJNY: ZATRZYMANIE ROBOTA!")
         is_emergency_stopped = True
         stop_robot()
-    elif command in ["robot go", "start", "jedz prosto", "jedz_do_przodu"]:
+    elif command in ["robot go", "start", "jedz prosto", "jedz_do_przodu", "cybuś start"]:
         rospy.loginfo("Odblokowano ruch robota.")
         is_emergency_stopped = False
 
