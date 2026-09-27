@@ -15,3 +15,8 @@ __pycache__/
 .idea/
 .DS_Store
 *.log
+
+# Ignorowane obce pakiety sprzętowe ROS
+catkin_ws/catkin_ws/src/gscam/
+catkin_ws/catkin_ws/src/jetbot_pro/
+catkin_ws/catkin_ws/src/rplidar_ros/
