@@ -1,10 +1,12 @@
 🇵🇱 **Polski** | 🇬🇧 [English](README.en.md)
 
-# 🤖 Cybuś — węzły ROS dla robota mobilnego
+# 🤖 Cybuś — węzły awaryjne i ruchu (ROS)
 
 ![ROS](https://img.shields.io/badge/ROS_Melodic-22314E?logo=ros&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?logo=nvidia&logoColor=white)
 
-Oprogramowanie dla **Cybusia** — robota mobilnego na platformie JetBot Pro (NVIDIA Jetson). 🛞 Węzły zamieniają proste komendy typu „jedź 1 m do przodu” czy „skręć w prawo o 90°” na precyzyjny ruch, pilnują bezpieczeństwa i wykrywają przeszkody lidarem.
+> 🎓 Projekt w kole naukowym **KN CyberTech** (Politechnika Wrocławska)
+
+Węzły awaryjne dla **Cybusia** — robota mobilnego koła na platformie JetBot Pro (NVIDIA Jetson). 🚨 Ich zadanie to bezpieczeństwo: natychmiastowe zatrzymanie robota na komendę i wykrywanie przeszkód lidarem. Do tego węzeł ruchu, który zamienia komendy typu „jedź 1 m do przodu” czy „skręć w prawo o 90°” na precyzyjny ruch. 🛞
 
 ## ✨ Węzły
 

@@ -1,10 +1,12 @@
 🇵🇱 [Polski](README.md) | 🇬🇧 **English**
 
-# 🤖 Cybuś — ROS Nodes for a Mobile Robot
+# 🤖 Cybuś — Emergency & Motion Nodes (ROS)
 
 ![ROS](https://img.shields.io/badge/ROS_Melodic-22314E?logo=ros&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?logo=nvidia&logoColor=white)
 
-Software for **Cybuś** — a mobile robot built on the JetBot Pro platform (NVIDIA Jetson). 🛞 The nodes turn simple commands like "drive 1 m forward" or "turn right 90°" into precise movement, keep things safe and detect obstacles with a lidar.
+> 🎓 Project in the **KN CyberTech** student research group (Wrocław University of Science and Technology)
+
+Emergency nodes for **Cybuś** — the group's mobile robot built on the JetBot Pro platform (NVIDIA Jetson). 🚨 Their job is safety: stopping the robot instantly on command and detecting obstacles with a lidar. Plus a motion node that turns commands like "drive 1 m forward" or "turn right 90°" into precise movement. 🛞
 
 ## ✨ Nodes
 
