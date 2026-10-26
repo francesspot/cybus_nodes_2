@@ -6,14 +6,14 @@
 
 > 🎓 Project in the **KN CyberTech** student research group (Wrocław University of Science and Technology)
 
-Emergency nodes for **Cybuś** — the group's mobile robot built on the JetBot Pro platform (NVIDIA Jetson). 🚨 Their job is safety: stopping the robot instantly on command and detecting obstacles with a lidar. Plus a motion node that turns commands like "drive 1 m forward" or "turn right 90°" into precise movement. 🛞
+Emergency nodes for **Cybuś** — the group's mobile robot built on the JetBot Pro platform (NVIDIA Jetson). Their job is safety: stopping the robot instantly on command and detecting obstacles with a lidar. Plus a motion node that turns commands like "drive 1 m forward" or "turn right 90°" into precise movement.
 
 ## ✨ Nodes
 
-- 🧭 **`cybus_motion_node`** — takes JSON commands (drive forward/backward, turn left/right, stop — command names are in Polish, e.g. `SKREC_W_PRAWO`) and executes them with **odometry feedback** until the robot has covered the distance or turned the angle
-- 🛑 **`emergency_stop_node`** — **emergency stop**: after a "stop" command (also "cybuś stop") it blocks movement until "start" arrives
-- 📡 **`lidar_reader`** + **`alert_handler`** — reads the lidar, raises an alarm when an obstacle is closer than **0.5 m** and sends STOP / GO commands
-- 📷 CSI camera driver for the Jetson
+- **`cybus_motion_node`** — takes JSON commands (drive forward/backward, turn left/right, stop — command names are in Polish, e.g. `SKREC_W_PRAWO`) and executes them with **odometry feedback** until the robot has covered the distance or turned the angle
+- **`emergency_stop_node`** — **emergency stop**: after a "stop" command (also "cybuś stop") it blocks movement until "start" arrives
+- **`lidar_reader`** + **`alert_handler`** — reads the lidar, raises an alarm when an obstacle is closer than **0.5 m** and sends STOP / GO commands
+- CSI camera driver for the Jetson
 
 ## 🛠️ Tech
 

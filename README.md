@@ -6,14 +6,14 @@
 
 > 🎓 Projekt w kole naukowym **KN CyberTech** (Politechnika Wrocławska)
 
-Węzły awaryjne dla **Cybusia** — robota mobilnego koła na platformie JetBot Pro (NVIDIA Jetson). 🚨 Ich zadanie to bezpieczeństwo: natychmiastowe zatrzymanie robota na komendę i wykrywanie przeszkód lidarem. Do tego węzeł ruchu, który zamienia komendy typu „jedź 1 m do przodu” czy „skręć w prawo o 90°” na precyzyjny ruch. 🛞
+Węzły awaryjne dla **Cybusia** — robota mobilnego koła na platformie JetBot Pro (NVIDIA Jetson). Ich zadanie to bezpieczeństwo: natychmiastowe zatrzymanie robota na komendę i wykrywanie przeszkód lidarem. Do tego węzeł ruchu, który zamienia komendy typu „jedź 1 m do przodu” czy „skręć w prawo o 90°” na precyzyjny ruch.
 
 ## ✨ Węzły
 
-- 🧭 **`cybus_motion_node`** — przyjmuje komendy w JSON (`JEDZ_DO_PRZODU`, `JEDZ_DO_TYLU`, `SKREC_W_LEWO`, `SKREC_W_PRAWO`, `ZATRZYMAJ_SIE`) i wykonuje je z **kontrolą na podstawie odometrii**, aż robot przejedzie zadany dystans lub obróci się o zadany kąt
-- 🛑 **`emergency_stop_node`** — **zatrzymanie awaryjne**: po komendzie „stop” (także „cybuś stop”) blokuje ruch, dopóki nie przyjdzie „start”
-- 📡 **`lidar_reader`** + **`alert_handler`** — odczyt lidaru, alarm, gdy przeszkoda jest bliżej niż **0,5 m**, i komendy STOP / GO
-- 📷 Sterownik kamery CSI dla Jetsona
+- **`cybus_motion_node`** — przyjmuje komendy w JSON (`JEDZ_DO_PRZODU`, `JEDZ_DO_TYLU`, `SKREC_W_LEWO`, `SKREC_W_PRAWO`, `ZATRZYMAJ_SIE`) i wykonuje je z **kontrolą na podstawie odometrii**, aż robot przejedzie zadany dystans lub obróci się o zadany kąt
+- **`emergency_stop_node`** — **zatrzymanie awaryjne**: po komendzie „stop” (także „cybuś stop”) blokuje ruch, dopóki nie przyjdzie „start”
+- **`lidar_reader`** + **`alert_handler`** — odczyt lidaru, alarm, gdy przeszkoda jest bliżej niż **0,5 m**, i komendy STOP / GO
+- Sterownik kamery CSI dla Jetsona
 
 ## 🛠️ Technologie
 
