@@ -7,5 +7,14 @@
     <param name="angular_speed"   value="0.8"/>
     <param name="dist_tolerance"  value="0.02"/>
     <param name="angle_tolerance" value="1.0"/>
+    <param name="max_escape_distance" value="0.3"/>
+    <param name="odom_timeout"        value="0.5"/>
+    <param name="timeout_factor"      value="2.0"/>
+  </node>
+
+  <!-- E-stop wyzwalany przez /lidar/alert (lidar_threshold.launch) -->
+  <node name="cybus_emergency" pkg="cybus_robot" type="emergency_stop_node.py"
+        output="screen" respawn="true">
+    <param name="alert_timeout" value="1.0"/>
   </node>
 </launch>
