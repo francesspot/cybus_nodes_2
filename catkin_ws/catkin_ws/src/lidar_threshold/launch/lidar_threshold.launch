@@ -1,6 +1,9 @@
 <launch>
   <node name="lidar_reader"   pkg="lidar_threshold" type="lidar_reader.py"
-        output="screen" required="true"/>
-  <node name="alert_handler"  pkg="lidar_threshold" type="alert_handler.py"
-        output="screen" required="true"/>
+        output="screen" respawn="true">
+    <param name="threshold"         value="0.5"/>
+    <param name="release_threshold" value="0.6"/>
+    <param name="sector_center_deg" value="0.0"/>
+    <param name="sector_width_deg"  value="120.0"/>
+  </node>
 </launch>
